@@ -15,7 +15,6 @@
 		2DB09B241D8D8A50000C73B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB09B231D8D8A50000C73B9 /* Assets.xcassets */; };
 		2DB09B261D8D8A8E000C73B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB09B251D8D8A8E000C73B9 /* main.m */; };
 		2DB09B2D1D8D8AFC000C73B9 /* PokemonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB09B2C1D8D8AFC000C73B9 /* PokemonListViewController.m */; };
-		2DB09B2F1D8D8B3A000C73B9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB09B2E1D8D8B3A000C73B9 /* Info.plist */; };
 		2DB09B361D8D9139000C73B9 /* PokemonListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB09B351D8D9139000C73B9 /* PokemonListTableViewCell.m */; };
 		2DB09B3A1D8D9BDE000C73B9 /* PokemonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB09B391D8D9BDE000C73B9 /* PokemonDetailViewController.m */; };
 		2DB09B3E1D8D9D43000C73B9 /* PokemonDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB09B3D1D8D9D43000C73B9 /* PokemonDetailTableViewCell.m */; };
@@ -497,7 +496,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB09B2F1D8D8B3A000C73B9 /* Info.plist in Resources */,
 				2DB09AF21D8D87C0000C73B9 /* LaunchScreen.storyboard in Resources */,
 				2DB09B241D8D8A50000C73B9 /* Assets.xcassets in Resources */,
 				2DB09AED1D8D87C0000C73B9 /* Main.storyboard in Resources */,
