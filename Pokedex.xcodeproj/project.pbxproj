@@ -86,6 +86,8 @@
 		2DD75BDF1D8E1C8B00B521D0 /* PokemonSpecie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PokemonSpecie.m; path = Application/Model/PokemonSpecie/PokemonSpecie.m; sourceTree = "<group>"; };
 		2DD75BE11D8E1D2100B521D0 /* PokemonSpecieNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PokemonSpecieNetworking.h; path = Application/Model/PokemonSpecie/PokemonSpecieNetworking.h; sourceTree = "<group>"; };
 		2DD75BE21D8E1D2100B521D0 /* PokemonSpecieNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PokemonSpecieNetworking.m; path = Application/Model/PokemonSpecie/PokemonSpecieNetworking.m; sourceTree = "<group>"; };
+		2DD75BE61D8F0FB900B521D0 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../Library/Developer/Xcode/DerivedData/Pokedex-esvrozqocnurkkefkxdlmaplrtbm/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		2DD75BE81D8F10BC00B521D0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7E36C1024A3C633ED9123DE4 /* Pods-Pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedex/Pods-Pokedex.debug.xcconfig"; sourceTree = "<group>"; };
 		B6E49D029A1C39F1A35027A1 /* Pods_Pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -366,6 +368,8 @@
 		F998336E0C2EE01F67F36BE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DD75BE81D8F10BC00B521D0 /* XCTest.framework */,
+				2DD75BE61D8F0FB900B521D0 /* AFNetworking.framework */,
 				B6E49D029A1C39F1A35027A1 /* Pods_Pokedex.framework */,
 			);
 			name = Frameworks;
