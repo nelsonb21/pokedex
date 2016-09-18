@@ -71,8 +71,8 @@
             [self.tableView reloadData];
         }else{
             NSLog(@"Error: %@", error);
-            //UIAlertController *alert = [[[AlertView alloc] init] showAlertView:getPokemonListErrorTitle withMessage:errorMessage];
-            //[self presentViewController:alert animated:YES completion:nil];
+            UIAlertController *alert = [[[AlertView alloc] init] showAlertView:getPokemonListErrorTitle withMessage:errorMessage];
+            [self presentViewController:alert animated:YES completion:nil];
         }
         [progress hideAnimated:YES];
     }];
@@ -109,8 +109,8 @@
             [self performSegueWithIdentifier: ShowPokemonDetailSegue sender:object];
         }else{
             NSLog(@"Error: %@", error);
-            //UIAlertController *alert = [[[AlertView alloc] init] showAlertView:getPokemonDetailErrorTitle withMessage:errorMessage];
-            //[self presentViewController:alert animated:YES completion:nil];
+            UIAlertController *alert = [[[AlertView alloc] init] showAlertView:getPokemonDetailErrorTitle withMessage:errorMessage];
+            [self presentViewController:alert animated:YES completion:nil];
         }
     }];
 }
