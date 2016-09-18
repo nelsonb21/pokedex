@@ -39,27 +39,27 @@
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
-    XCTestExpectation *expectation = [self expectationWithDescription:@"Loading pokemon list"];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(19 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [expectation fulfill];
-    });
-    
-    [self waitForExpectationsWithTimeout:20 handler:nil];
-    XCTAssertGreaterThan(self.app.tables.cells.count, 1);
-    
-    XCTAssert(self.app.tables.staticTexts[@"Charmander"].exists);
-    
-    [self.app.tables.staticTexts[@"Charmander"] tap];
-    
-    XCTestExpectation *expectation2 = [self expectationWithDescription:@"Show pokemon detail"];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(19 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [expectation2 fulfill];
-    });
-    
-    [self waitForExpectationsWithTimeout:20 handler:nil];
-    XCTAssert(self.app.tables.cells.staticTexts[@"Charmander"].exists);
+//    XCTestExpectation *expectation = [self expectationWithDescription:@"Loading pokemon list"];
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(19 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [expectation fulfill];
+//    });
+//    
+//    [self waitForExpectationsWithTimeout:20 handler:nil];
+//    XCTAssertGreaterThan(self.app.tables.cells.count, 1);
+//    
+//    XCTAssert(self.app.tables.staticTexts[@"Charmander"].exists);
+//    
+//    [self.app.tables.staticTexts[@"Charmander"] tap];
+//    
+//    XCTestExpectation *expectation2 = [self expectationWithDescription:@"Show pokemon detail"];
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(19 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [expectation2 fulfill];
+//    });
+//    
+//    [self waitForExpectationsWithTimeout:20 handler:nil];
+//    XCTAssert(self.app.tables.cells.staticTexts[@"Charmander"].exists);
 }
 
 
