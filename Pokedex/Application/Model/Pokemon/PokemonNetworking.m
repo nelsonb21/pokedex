@@ -7,14 +7,14 @@
 //
 
 #import "PokemonNetworking.h"
-
 #import "PokemonSpecieNetworking.h"
+#import "AppConstant.h"
 
 @implementation PokemonNetworking
 
 - (NSURLSessionDataTask *)getPokemonDetailWithBlock:(int)pokemonID withBlock:(void (^)(Pokemon *object, NSError *error))block {
     
-    NSString *url = [@"pokemon/" stringByAppendingString:[NSString stringWithFormat:@"%d", pokemonID]];
+    NSString *url = [pokemonURL stringByAppendingString:[NSString stringWithFormat:@"%d", pokemonID]];
     
     return [[Networking sharedClient] GET: url parameters:nil progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
         PokemonSpecieNetworking *specie = [[PokemonSpecieNetworking alloc] init];

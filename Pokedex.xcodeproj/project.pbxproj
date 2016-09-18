@@ -26,6 +26,7 @@
 		2DD75BDC1D8E1B3300B521D0 /* PokemonNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD75BDB1D8E1B3300B521D0 /* PokemonNetworking.m */; };
 		2DD75BE01D8E1C8B00B521D0 /* PokemonSpecie.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD75BDF1D8E1C8B00B521D0 /* PokemonSpecie.m */; };
 		2DD75BE31D8E1D2100B521D0 /* PokemonSpecieNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD75BE21D8E1D2100B521D0 /* PokemonSpecieNetworking.m */; };
+		2DD75BED1D8F350A00B521D0 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD75BEC1D8F350A00B521D0 /* AlertView.m */; };
 		F1BDCF1960A932E3D60F678F /* Pods_Pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E49D029A1C39F1A35027A1 /* Pods_Pokedex.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,8 @@
 		2DD75BE21D8E1D2100B521D0 /* PokemonSpecieNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PokemonSpecieNetworking.m; path = Application/Model/PokemonSpecie/PokemonSpecieNetworking.m; sourceTree = "<group>"; };
 		2DD75BE61D8F0FB900B521D0 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../Library/Developer/Xcode/DerivedData/Pokedex-esvrozqocnurkkefkxdlmaplrtbm/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		2DD75BE81D8F10BC00B521D0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2DD75BEB1D8F350A00B521D0 /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertView.h; path = Application/Classes/AlertView/AlertView.h; sourceTree = "<group>"; };
+		2DD75BEC1D8F350A00B521D0 /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertView.m; path = Application/Classes/AlertView/AlertView.m; sourceTree = "<group>"; };
 		7E36C1024A3C633ED9123DE4 /* Pods-Pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedex/Pods-Pokedex.debug.xcconfig"; sourceTree = "<group>"; };
 		B6E49D029A1C39F1A35027A1 /* Pods_Pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -340,6 +343,7 @@
 		2DD75BD21D8DC59500B521D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2DD75BEA1D8F34C700B521D0 /* AlertView */,
 				2DD75BD31D8DC59F00B521D0 /* Networking */,
 			);
 			name = Classes;
@@ -363,6 +367,15 @@
 				2DD75BE21D8E1D2100B521D0 /* PokemonSpecieNetworking.m */,
 			);
 			name = PokemonSpecie;
+			sourceTree = "<group>";
+		};
+		2DD75BEA1D8F34C700B521D0 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				2DD75BEB1D8F350A00B521D0 /* AlertView.h */,
+				2DD75BEC1D8F350A00B521D0 /* AlertView.m */,
+			);
+			name = AlertView;
 			sourceTree = "<group>";
 		};
 		F998336E0C2EE01F67F36BE1 /* Frameworks */ = {
@@ -561,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DD75BE01D8E1C8B00B521D0 /* PokemonSpecie.m in Sources */,
+				2DD75BED1D8F350A00B521D0 /* AlertView.m in Sources */,
 				2DD75BDC1D8E1B3300B521D0 /* PokemonNetworking.m in Sources */,
 				2DD75BD61D8DC5E400B521D0 /* Networking.m in Sources */,
 				2DB09B261D8D8A8E000C73B9 /* main.m in Sources */,

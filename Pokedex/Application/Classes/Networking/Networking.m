@@ -7,10 +7,9 @@
 //
 
 #import "Networking.h"
+#import "AppConstant.h"
 
 @implementation Networking
-
-static NSString *const baseURL = @"http://pokeapi.co/api/v2/";
 
 + (instancetype)sharedClient {
     static Networking *_sharedClient = nil;

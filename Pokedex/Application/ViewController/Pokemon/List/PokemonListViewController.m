@@ -12,7 +12,9 @@
 #import "PokemonDetailViewController.h"
 #import "PokemonNetworking.h"
 #import "PokemonList.h"
+#import "AlertView.h"
 #import "AppSegue.h"
+#import "AppConstant.h"
 #import "MBProgressHUD.h"
 
 @interface PokemonListViewController ()
@@ -63,12 +65,14 @@
         if (!error && object.count > 0) {
             if (self.offset == 0) {
                 self.pokemonArray = [NSMutableArray arrayWithArray:object];
-            }else{
+            }else {
                 [self.pokemonArray addObjectsFromArray:object];
             }
             [self.tableView reloadData];
         }else{
             NSLog(@"Error: %@", error);
+            //UIAlertController *alert = [[[AlertView alloc] init] showAlertView:getPokemonListErrorTitle withMessage:errorMessage];
+            //[self presentViewController:alert animated:YES completion:nil];
         }
         [progress hideAnimated:YES];
     }];
@@ -103,6 +107,10 @@
         if (!error) {
             [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
             [self performSegueWithIdentifier: ShowPokemonDetailSegue sender:object];
+        }else{
+            NSLog(@"Error: %@", error);
+            //UIAlertController *alert = [[[AlertView alloc] init] showAlertView:getPokemonDetailErrorTitle withMessage:errorMessage];
+            //[self presentViewController:alert animated:YES completion:nil];
         }
     }];
 }
@@ -117,7 +125,6 @@
 #pragma Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
     if ([segue.identifier isEqualToString:ShowPokemonDetailSegue]) {
         PokemonDetailViewController *viewController = segue.destinationViewController;
         viewController.pokemon = sender;

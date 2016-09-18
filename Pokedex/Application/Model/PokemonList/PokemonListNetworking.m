@@ -8,6 +8,7 @@
 
 #import "PokemonListNetworking.h"
 #import "PokemonList.h"
+#import "AppConstant.h"
 
 @implementation PokemonListNetworking
 
@@ -16,7 +17,7 @@
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setObject:[NSNumber numberWithInt:offset] forKey:@"offset"];
     
-    return [[Networking sharedClient] GET: @"pokemon" parameters:params progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
+    return [[Networking sharedClient] GET: pokemonURL parameters:params progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
         NSArray *objectFromResponse = [JSON valueForKey:@"results"];
         NSMutableArray *mutableObjects = [NSMutableArray arrayWithCapacity:[objectFromResponse count]];
         
