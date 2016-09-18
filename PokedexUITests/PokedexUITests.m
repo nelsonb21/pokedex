@@ -48,9 +48,9 @@
     [self waitForExpectationsWithTimeout:20 handler:nil];
     XCTAssertGreaterThan(self.app.tables.cells.count, 1);
     
-    XCTAssert(self.app.tables.staticTexts[@"charmander"].exists);
+    XCTAssert(self.app.tables.staticTexts[@"Charmander"].exists);
     
-    [self.app.tables.staticTexts[@"charmander"] tap];
+    [self.app.tables.staticTexts[@"Charmander"] tap];
     
     XCTestExpectation *expectation2 = [self expectationWithDescription:@"Show pokemon detail"];
     
@@ -59,7 +59,7 @@
     });
     
     [self waitForExpectationsWithTimeout:20 handler:nil];
-    XCTAssert(self.app.staticTexts[@"4."].exists);
+    XCTAssert(self.app.tables.cells.staticTexts[@"Charmander"].exists);
 }
 
 

@@ -87,7 +87,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PokemonListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: self.cellIdentifier forIndexPath:indexPath];
     PokemonList *pokemon = self.pokemonArray[indexPath.row];
-    cell.pokemonNameLabel.text = pokemon.name;
+    cell.pokemonNameLabel.text = [pokemon.name capitalizedString];
     return cell;
 }
 
